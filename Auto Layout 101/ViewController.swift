@@ -22,6 +22,9 @@ class ViewController: UIViewController {
     @IBOutlet var centerY: NSLayoutConstraint!
 
     
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
