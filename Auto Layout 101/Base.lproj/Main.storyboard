@@ -202,31 +202,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WaM-C1-urZ">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Otter" translatesAutoresizingMaskIntoConstraints="NO" id="WaM-C1-urZ">
                                 <rect key="frame" x="28" y="28" width="264" height="430"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q46-wb-pkY">
-                                <rect key="frame" x="35" y="499" width="59" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Previous"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OY7-eX-B5z">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OY7-eX-B5z">
                                 <rect key="frame" x="140" y="499" width="40" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Share"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnF-Qr-xrI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnF-Qr-xrI">
                                 <rect key="frame" x="253" y="499" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OC5-h5-EA0">
+                                <rect key="frame" x="31" y="499" width="59" height="30"/>
+                                <state key="normal" title="Previous"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="OC5-h5-EA0" firstAttribute="leading" secondItem="vqh-Fw-n9I" secondAttribute="leadingMargin" constant="15" id="6GD-Ej-zEa"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="xnF-Qr-xrI" secondAttribute="bottom" constant="39" id="Fjd-rL-tG6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="OY7-eX-B5z" secondAttribute="bottom" constant="39" id="MTr-gT-dBd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xnF-Qr-xrI" secondAttribute="trailing" constant="19" id="NoE-vN-HF6"/>
                             <constraint firstItem="WaM-C1-urZ" firstAttribute="top" secondItem="vqh-Fw-n9I" secondAttribute="topMargin" constant="28" id="ORO-Bc-ofY"/>
                             <constraint firstAttribute="bottomMargin" secondItem="WaM-C1-urZ" secondAttribute="bottom" id="Qbi-UD-VKt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="WaM-C1-urZ" secondAttribute="trailing" constant="12" id="STq-5O-hLG"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="OC5-h5-EA0" secondAttribute="bottom" constant="39" id="Sjc-Sp-VZV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="OY7-eX-B5z" secondAttribute="trailing" constant="124" id="YrM-e9-ZNL"/>
                             <constraint firstItem="WaM-C1-urZ" firstAttribute="leading" secondItem="vqh-Fw-n9I" secondAttribute="leadingMargin" constant="12" id="Yxs-rs-PL2"/>
+                            <constraint firstItem="OY7-eX-B5z" firstAttribute="leading" secondItem="vqh-Fw-n9I" secondAttribute="leadingMargin" constant="124" id="deq-fn-U89"/>
                             <constraint firstItem="WaM-C1-urZ" firstAttribute="width" secondItem="vqh-Fw-n9I" secondAttribute="width" constant="-56" id="jcF-dc-o9Q"/>
                             <constraint firstItem="WaM-C1-urZ" firstAttribute="centerX" secondItem="vqh-Fw-n9I" secondAttribute="centerXWithinMargins" id="wU8-px-Goy"/>
                             <constraint firstItem="WaM-C1-urZ" firstAttribute="height" secondItem="vqh-Fw-n9I" secondAttribute="height" constant="-138" id="wh1-5e-QLo"/>
@@ -240,5 +244,6 @@
     </scenes>
     <resources>
         <image name="Heart.png" width="60" height="60"/>
+        <image name="Otter" width="480" height="479"/>
     </resources>
 </document>
